@@ -9,3 +9,6 @@
 - Dark theme
 - fixes in `posts/helloWorld.nim`
 - Added post base file
+- Added favicon
+- Added page titles
+- Added page template to apply same config

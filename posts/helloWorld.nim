@@ -1,7 +1,9 @@
 from std/strutils import join
 from std/strformat import fmt
 
-import incl/postBase
+import pkg/nimib
+
+import incl/posts
 
 post:
   nbText fmt"""
