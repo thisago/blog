@@ -3,3 +3,5 @@
 ## 2023/07/31
 
 - init
+- Added hello world post
+- Added config.nims correctly
