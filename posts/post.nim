@@ -1,3 +1,4 @@
+from std/strutils import join
 from std/strformat import fmt
 import pkg/nimib
 
