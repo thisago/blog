@@ -5,3 +5,4 @@
 - init
 - Added hello world post
 - Added config.nims correctly
+- Added missing fmt in `posts/helloWorld.nim`

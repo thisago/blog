@@ -32,7 +32,7 @@ nbCode:
   echo "myFirstPost".toPostName
   echo "myNewPost-partOne".toPostName
 
-nbText """
+nbText fmt"""
 ### Generation
 The file [`genpages.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/genpages.nim)
 compile and runs all posts and put then in `public/` dir.
