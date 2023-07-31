@@ -1,4 +1,5 @@
-import nimib
+from std/strformat import fmt
+import pkg/nimib
 
 nbInit
 
