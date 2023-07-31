@@ -12,3 +12,5 @@
 - Added favicon
 - Added page titles
 - Added page template to apply same config
+- Cleaned `incl/posts.nim`
+- Added site name to pages title
