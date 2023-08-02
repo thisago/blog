@@ -5,6 +5,7 @@
 - Fixes at `projects/htmlAntiCopy`; Closes #6
 - Deleted `.gitattributes`; Closes #4
 - Fixed last modification label; Closes #2
+- Added a list of ways to bypass `htmlAntiCopy`; Closes #5
 
 ## 2023/08/02
 

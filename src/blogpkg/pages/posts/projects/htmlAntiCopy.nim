@@ -72,6 +72,7 @@ Let's increase a _little bit_!
   html = "How much text in me?".shuffle(20).toHtml
   nbText fmt"<pre>{html}</pre>"
 
+
   nbText """---
 
 ## Fun time
@@ -132,6 +133,15 @@ Let's play a bit with this!
           verbatim shuffledHtml
 
   nbText """---
+
+## Can I bypass it?
+Yes, every technology has a flaw, in this case, we saw that we choose which char
+will be hid with CSS, so, in order to bypass it, you can parse the CSS selector
+to get the random chars indexes and remove if from HTML.
+
+But it's very specific, bots and common users wouldn't be able to copy.
+
+## Finalization
 If you want to know more about this library, see the project repo at
 [thisago/htmlAntiCopy](https://github.com/thisago/htmlAntiCopy)
 """
