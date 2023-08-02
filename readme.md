@@ -27,6 +27,16 @@ With Nimib, Nim can be used as a powerful web page generator!
 
 ## Compilation
 
+### Dependencies
+
+**Debian**
+
+```
+sudo apt install libsass-dev
+```
+
+### Generation
+
 Just run:
 
 ```
