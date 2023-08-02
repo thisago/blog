@@ -141,6 +141,9 @@ to get the random chars indexes and remove if from HTML.
 
 But it's very specific, bots and common users wouldn't be able to copy.
 
+Or just use OCR, but to try prevent it, the text needs to be partially unreadable
+and this affects the user experience.
+
 ## Finalization
 If you want to know more about this library, see the project repo at
 [thisago/htmlAntiCopy](https://github.com/thisago/htmlAntiCopy)
