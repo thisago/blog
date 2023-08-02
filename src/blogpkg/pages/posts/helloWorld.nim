@@ -3,7 +3,7 @@ from std/strformat import fmt
 
 import pkg/nimib
 
-import incl/posts
+import incl/post
 
 post:
   nbText fmt"""
