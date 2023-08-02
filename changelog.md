@@ -10,6 +10,7 @@
 - Added posts JSON list for external implementation! Closes #1
 - Edited `projects/htmlAntiCopy`
 - Added "Why?" and "How it works?" section in `projects/htmlAntiCopy`
+- Added `run_all_release` nimble task
 
 ## 2023/08/02
 

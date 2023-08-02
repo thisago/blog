@@ -25,3 +25,7 @@ requires "htmlAntiCopy"
 task runAll, "Builds and run all":
   for file in bin:
     exec "nimble --silent run " & file
+
+task runAllRelease, "Builds in release mode and run all":
+  for file in bin:
+    exec "nimble --silent -d:release run " & file

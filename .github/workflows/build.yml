@@ -15,8 +15,8 @@ jobs:
         run: nimble install -y
       - name: install libsass
         run: sudo apt install libsass-dev
-      - name: build run_all
-        run: nimble run_all
+      - name: build run_all_release
+        run: nimble run_all_release
       - name: Create CNAME
         run: echo "blog.thisago.com" > public/CNAME
       - name: deploy on github pages
