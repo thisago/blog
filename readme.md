@@ -4,7 +4,7 @@
 
 #### A coder's blog :)
 
-**[About](#about) - [Why?](#why) - [How?](#how)** - [License](#license)
+**[About](#about) - [Why](#why) - [How](#how)** - [License](#license)
 
 ---
 
