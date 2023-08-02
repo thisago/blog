@@ -6,6 +6,7 @@
 - Deleted `.gitattributes`; Closes #4
 - Fixed last modification label; Closes #2
 - Added a list of ways to bypass `htmlAntiCopy`; Closes #5
+- Added automatic build with Github Workflows
 
 ## 2023/08/02
 
