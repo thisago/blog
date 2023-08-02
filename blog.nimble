@@ -22,6 +22,11 @@ requires "util"
 # post specific
 requires "htmlAntiCopy"
 
+from std/os import `/`
+from ./src/blogpkg/incl/config import publicDir
+
+const cname = "CNAME"
+
 task runAll, "Builds and run all":
   for file in bin:
     exec "nimble --silent run " & file
@@ -29,3 +34,4 @@ task runAll, "Builds and run all":
 task runAllRelease, "Builds in release mode and run all":
   for file in bin:
     exec "nimble --silent -d:release run " & file
+  cpFile cname, publicDir / cname

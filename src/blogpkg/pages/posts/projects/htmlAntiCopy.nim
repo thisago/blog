@@ -17,7 +17,7 @@ See this example, try to copy the following text:
   nbText """---
 Such interesting right?
 
-**Let's see how it works**
+**Let's see how to reproduce**
 
 To generate a shuffled text like above is very simple, just call `shuffle`, let's see:
 """
@@ -41,9 +41,8 @@ To generate a shuffled text like above is very simple, just call `shuffle`, let'
 This method doesn't block expert users to copy, it's intended to prevent bots
 and regular users to copy some text content.
 
-Now you may be curious to see how it works, right? **So let's check it out!**
-
 ## How it works?
+Now you may be curious to see how it works, right? **So let's check it out!**
 
 The output of this program is an HTML, as you saw in the name, here's an small
 example of an possible output for shuffling "Hi":

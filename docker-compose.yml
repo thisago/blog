@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  book:
+    build: .
+    image: blog
+    volumes:
+      - .:/usr/src/app
+    command: nimble run_all_release

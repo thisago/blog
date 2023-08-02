@@ -11,6 +11,8 @@
 - Edited `projects/htmlAntiCopy`
 - Added "Why?" and "How it works?" section in `projects/htmlAntiCopy`
 - Added `run_all_release` nimble task
+- Added CNAME into master branch
+- Added Docker
 
 ## 2023/08/02
 
