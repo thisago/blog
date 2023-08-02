@@ -2,6 +2,10 @@
 
 ## 2023/08/02
 
+- Fixes at `projects/htmlAntiCopy`; Closes #6
+
+## 2023/08/02
+
 - Typo in index
 - Added the content of post `projects/htmlAntiCopy`
 - Increased description max len

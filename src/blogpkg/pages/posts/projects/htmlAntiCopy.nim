@@ -3,7 +3,6 @@ from std/strformat import fmt
 import pkg/nimib
 
 import incl/post
-import incl/postutils
 
 from pkg/htmlAntiCopy import shuffle, toHtml
 
@@ -54,19 +53,20 @@ example of an possible output for shuffling "Hi":
   <i>i</i>
 </div>
 ```
-So, what it does is create random chars inside the text and wrap all chars in
-a HTML element, in case `italic`, because the tag name is small.  
+So, what it does is add random chars inside the text and wrap each char in a
+`italic` element inside a container with a random class, because the tag name is small.  
 Then an CSS hides the random generated chars by index!
 
-It's also possible to increase "shuffle level" in order to add more random chars
-in the text!
+It's also possible to increase "shuffle level" to increase the random chars in
+the text!
 
 Let's increase a _little bit_!
 """
 
   nbCodeSkip:
-    let newShuffled = "How much text in me?".shuffle 20
-    let newHtml = newShuffled.toHtml
+    let
+      newShuffled = "How much text in me?".shuffle 20
+      newHtml = newShuffled.toHtml
     echo newHtml
 
   html = "How much text in me?".shuffle(20).toHtml
@@ -77,6 +77,7 @@ Let's increase a _little bit_!
 ## Fun time
 Let's play a bit with this!
 """
+
   nbKaraxCode:
     from std/strutils import replace
 
@@ -84,7 +85,7 @@ Let's play a bit with this!
     from pkg/util/forStr import tryParseInt
 
     var
-      text = "Copy me! Also, edit me!"
+      text = "Copy and edit me!"
       level = 1
       shuffledHtml = text.antiCopy(level)
       disableCss = false
@@ -131,6 +132,6 @@ Let's play a bit with this!
           verbatim shuffledHtml
 
   nbText """---
-If you want to know more about this library and CLI app, see the project repo at
+If you want to know more about this library, see the project repo at
 [thisago/htmlAntiCopy](https://github.com/thisago/htmlAntiCopy)
 """
