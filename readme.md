@@ -6,6 +6,8 @@
 
 **[About](#about) - [Why](#why) - [How](#how)** - [License](#license)
 
+[![.github/workflows/build.yml](https://github.com/thisago/blog/actions/workflows/build.yml/badge.svg)](https://github.com/thisago/blog/actions/workflows/build.yml)
+
 ---
 
 ![](https://user-images.githubusercontent.com/74574275/257840852-f44948ee-7aad-4b97-a8d5-e183a6798707.png)
