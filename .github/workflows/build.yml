@@ -8,17 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: install nim
-        id: install_nim
-        uses: iffy/install-nim@v3
-      - name: install library dependencies
-        run: nimble install -y
-      - name: install libsass
-        run: sudo apt install libsass-dev
-      - name: build run_all_release
-        run: nimble run_all_release
-      - name: Create CNAME
-        run: echo "blog.thisago.com" > public/CNAME
+      
+      - name: Docs
+        run: docker-compose run docs
+
       - name: deploy on github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
