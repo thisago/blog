@@ -5,7 +5,7 @@ author        = "Thiago Navarro"
 description   = "thisago's blog"
 license       = "GPL-3.0"
 srcDir        = "src"
-bin           = @["genpages", "gencss"]
+bin           = @["genpages", "gencss", "genjson"]
 
 binDir = "build"
 

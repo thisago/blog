@@ -7,6 +7,7 @@
 - Fixed last modification label; Closes #2
 - Added a list of ways to bypass `htmlAntiCopy`; Closes #5
 - Added automatic build with Github Workflows
+- Added posts JSON list for external implementation! Closes #1
 
 ## 2023/08/02
 
