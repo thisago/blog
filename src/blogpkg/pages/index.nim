@@ -28,7 +28,7 @@ post:
           f = splitFile "." & filepath
         tdiv(class = "post"):
           tdiv(class = "post_meta"):
-            span(class = "post_meta_data_modifiedAt"): text nimFile.getLastModificationTime.format "yyyy/MM/dd hh:mm:ss tt"
+            span(class = "post_meta_modifiedAt"): text nimFile.getLastModificationTime.format "yyyy/MM/dd hh:mm:ss tt"
             # unfortunately Unix doesn't stores file creation date (https://unix.stackexchange.com/a/91201)
           h2(class = "post_title"):
             if f.dir.len > 0:

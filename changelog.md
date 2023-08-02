@@ -3,6 +3,8 @@
 ## 2023/08/02
 
 - Fixes at `projects/htmlAntiCopy`; Closes #6
+- Deleted `.gitattributes`; Closes #4
+- Fixed last modification label; Closes #2
 
 ## 2023/08/02
 
