@@ -1,5 +1,12 @@
 # Changelog
 
+## 2023/08/02
+
+- Typo in index
+- Added the content of post `projects/htmlAntiCopy`
+- Increased description max len
+- Description is now stripped
+
 ## 2023/08/01
 
 - Replaced markdown texts to static Karax DSLs from index file!

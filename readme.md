@@ -43,6 +43,10 @@ Just run:
 nimble run_all
 ```
 
+## TODO
+
+- [ ] Add hash checking to skip unchanged files
+
 ## License
 
 GPL-3

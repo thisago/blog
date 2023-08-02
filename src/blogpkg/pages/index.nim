@@ -16,7 +16,7 @@ post:
   nbStaticKarax(tdiv):
     h1: text siteName
     p:
-      text "Welcome to my blog! I'ts a WIP project, but with time, it will look cooler :)"
+      text "Welcome to my blog! It's a WIP project, but with time, it will look cooler :)"
     h2: text "Posts"
     tdiv(class = "posts"):
       let allPosts = getAllposts postsDir
