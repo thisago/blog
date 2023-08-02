@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  gh-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install nim
+        id: install_nim
+        uses: iffy/install-nim@v3
+      - name: install library dependencies
+        run: nimble install -y
+      - name: build run_all
+        run: nimble run_all
+      - name: deploy on github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
