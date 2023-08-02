@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Docs
-        run: docker-compose run docs
+
+      - name: Build blog
+        run: docker-compose run blog
 
       - name: deploy on github pages
         uses: peaceiris/actions-gh-pages@v3
