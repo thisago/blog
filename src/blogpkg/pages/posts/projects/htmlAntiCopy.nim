@@ -37,7 +37,13 @@ To generate a shuffled text like above is very simple, just call `shuffle`, let'
   
   nbText """Easy as that!
 
+## Why?
+This method doesn't block expert users to copy, it's intended to prevent bots
+and regular users to copy some text content.
+
 Now you may be curious to see how it works, right? **So let's check it out!**
+
+## How it works?
 
 The output of this program is an HTML, as you saw in the name, here's an small
 example of an possible output for shuffling "Hi":
