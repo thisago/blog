@@ -12,6 +12,8 @@ jobs:
         uses: iffy/install-nim@v3
       - name: install library dependencies
         run: nimble install -y
+      - name: install libsass
+        run: sudo apt install libsass-dev
       - name: build run_all
         run: nimble run_all
       - name: deploy on github pages
