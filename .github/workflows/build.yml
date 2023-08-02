@@ -1,16 +1,26 @@
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 jobs:
   gh-docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: install nim
 
-      - name: Build blog
-        run: docker-compose run blog
+        id: install_nim
+        uses: iffy/install-nim@v3
+
+      - name: install library dependencies
+        run: nimble install -y
+
+      - name: install libsass
+        run: sudo apt install libsass-dev
+
+      - name: build run_all_release
+        run: nimble run_all_release
 
       - name: deploy on github pages
         uses: peaceiris/actions-gh-pages@v3

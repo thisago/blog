@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  blog:
-    build: .
-    image: blog
-    volumes:
-      - .:/usr/src/app
-    command: sudo apt install libsass-dev && nimble run_all_release
