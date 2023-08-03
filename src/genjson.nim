@@ -1,19 +1,20 @@
 from std/os import createDir, `/`, splitFile, getLastModificationTime
 from std/strutils import contains, replace
 from std/json import `$`, `%*`, `%`
-from std/times import toUnix
+from std/times import toUnix, toTime
 
 from blogpkg/incl/getPosts import getAllPosts
 from blogpkg/incl/postName import toPostName
 from blogpkg/incl/postDescription import genPostDescription
 from blogpkg/incl/config import publicDir, pagesDir, outJsonFile, blogUrl
+from blogpkg/incl/gitDt import gitFileLastModified, gitFileCreation, prettyDt
 
 createDir publicDir
 
 type
   Post = object
     name, description, url: string
-    modifiedAt: int64 # unixTime
+    createdAt, modifiedAt: int64 # unixTime
 
 # Generate a post list in a JSON
 
@@ -33,7 +34,8 @@ for filename in getAllPosts pagesDir:
       name: nimFile.toPostName,
       description: genPostDescription readFile nimfile,
       url: blogUrl & path,
-      modifiedAt: nimFile.getLastModificationTime.toUnix
+      createdAt: nimFile.gitFileCreation.toTime.toUnix,
+      modifiedAt: nimFile.gitFileLastModified.toTime.toUnix
     )
 
 (publicDir / outJsonFile).writeFile($ %*posts)

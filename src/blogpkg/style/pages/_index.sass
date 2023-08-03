@@ -9,7 +9,7 @@
       margin: 0.1em 0
 
       &_category
-        font-size: .6em
+        font-size: .7em
         color: var(--variable)
 
     &_description
@@ -21,7 +21,20 @@
     &_meta
       font-size: .7em
       color: var(--text-muted)
+      display: flex
+      flex-direction: row
 
-      &_modifiedAt
+      span
+        margin-right: 1em
+        position: relative
+
         &::before
-          content: "Modified at: "
+          position: absolute
+          top: -1em
+          left: 0
+          font-weight: bold
+
+      &_createdAt::before
+        content: "Created at"
+      &_modifiedAt::before
+        content: "Modified at"

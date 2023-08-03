@@ -3,6 +3,10 @@
 ## 2023/08/03
 
 - Removed index from posts JSON generation
+- Added optional post specific generation for `genpages` app
+- Getting creation and modification date with `git log`
+- Added creation date in index and JSON
+- Styling
 
 ## 2023/08/02
 

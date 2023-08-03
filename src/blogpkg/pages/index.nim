@@ -1,6 +1,5 @@
 from std/os import splitFile, relativePath, getLastModificationTime
 from std/strformat import fmt
-from std/times import format
 from std/strutils import replace
 
 import pkg/nimib
@@ -9,13 +8,14 @@ from incl/getPosts import getAllPosts
 from incl/postName import toPostName
 from incl/config import postsDir, siteName, pagesDir
 from incl/postDescription import genPostDescription
+from incl/gitDt import gitFileLastModified, gitFileCreation, prettyDt
 
 import incl/post
 
 post:
   nbStaticKarax(tdiv):
     h1: text siteName
-    p: text "Welcome to my blog! It's a WIP project, but with time, it will look cooler :)"
+    p: text "Welcome to my programming blog! ;)"
     h2: text "Posts"
     tdiv(class = "posts"):
       let allPosts = getAllposts postsDir
@@ -27,9 +27,10 @@ post:
           f = splitFile "." & filepath
         tdiv(class = "post"):
           tdiv(class = "post_meta"):
+            span(class = "post_meta_createdAt"):
+              text prettyDt gitFileCreation nimFile
             span(class = "post_meta_modifiedAt"):
-              text nimFile.getLastModificationTime.format "yyyy/MM/dd hh:mm:ss tt"
-            # unfortunately Unix doesn't stores file creation date (https://unix.stackexchange.com/a/91201)
+              text prettyDt gitFileLastModified nimFile
           h2(class = "post_title"):
             if f.dir.len > 0:
               tdiv(class = "post_title_category"):
