@@ -21,7 +21,7 @@ var posts: seq[Post]
 
 for filename in getAllPosts pagesDir:
   let f = splitFile filename
-  if f.name != "genpages" and "incl" notin f.dir:
+  if f.name notin ["genpages", "index"] and "incl" notin f.dir:
     let
       nimFile = filename & ".nim"
       path = (proc: string =

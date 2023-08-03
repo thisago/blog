@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023/08/03
+
+- Removed index from posts JSON generation
+
 ## 2023/08/02
 
 - Fixes at `projects/htmlAntiCopy`; Closes #6
