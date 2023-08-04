@@ -29,4 +29,3 @@ task runAll, "Builds and run all":
 task runAllRelease, "Builds in release mode and run all":
   for file in bin:
     exec "nimble --silent -d:release run " & file
-  cpFile "CNAME", "public/CNAME"
