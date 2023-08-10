@@ -5,11 +5,11 @@ from std/times import parse, format, DateTime
 
 const
   outTimeFormat = "yyyy/MM/dd hh:mm:ss tt"
-  gitTimeFormat = "yyyy-MM-dd HH:mm:ss '+0000'"
+  gitTimeFormat = "yyyy-MM-dd HH:mm:ss"
 
 proc parseGitDate(s: string): DateTime =
   # .replace(" +0000", "").strip
-  s.strip.parse gitTimeFormat
+  s.strip[0..<s.len - 7].parse gitTimeFormat
 
 proc prettyDt*(s: DateTime): string =
   s.format outTimeFormat

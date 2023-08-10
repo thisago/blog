@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023/08/10
+
+- Fixed Git datetime parsing
+
 ## 2023/08/03
 
 - Removed index from posts JSON generation
