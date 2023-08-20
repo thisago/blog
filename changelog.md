@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023/08/20
+
+- Fixed Github file urls in helloWorld post
+
 ## 2023/08/10
 
 - Fixed Git datetime parsing

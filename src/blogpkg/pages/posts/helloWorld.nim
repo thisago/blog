@@ -24,7 +24,7 @@ You can see the source code at [thisago/blog {externalIcon}](https://github.com/
   nbText fmt"""
 ### Post name
 The post name comes from filename.  
-The module [`incl/postName.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/incl/postName.nim)
+The module [`incl/postName.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/src/blogpkg/incl/postName.nim)
 generates the post title from filename:"""
 
   nbCode:
@@ -34,7 +34,7 @@ generates the post title from filename:"""
 
   nbText fmt"""
 ### Generation
-The file [`genpages.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/genpages.nim)
+The file [`genpages.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/src/genpages.nim)
 compile and runs all posts and put then in `public/` dir.
 
 ## Outro
