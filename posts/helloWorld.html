@@ -58,14 +58,14 @@ pre > code {
 <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;John ate &quot;</span> &amp; food</code></pre><pre class="nb-output">John ate apple</pre>
 <h3>Post name</h3>
 <p>The post name comes from filename.<br />
-The module <a href="https://github.com/thisago/blog/blob/master/incl/postName.nim"><code>incl/postName.nim</code> <sup style="font-size:0.7em">↗</sup></a>
+The module <a href="https://github.com/thisago/blog/blob/master/src/blogpkg/incl/postName.nim"><code>incl/postName.nim</code> <sup style="font-size:0.7em">↗</sup></a>
 generates the post title from filename:</p>
 <pre><code class="nohighlight hljs nim"><span class="hljs-keyword">from</span> incl/postName <span class="hljs-keyword">import</span> toPostName
 <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;myFirstPost&quot;</span>.toPostName
 <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;myNewPost-partOne&quot;</span>.toPostName</code></pre><pre class="nb-output">My first post
 My new post - Part one</pre>
 <h3>Generation</h3>
-<p>The file <a href="https://github.com/thisago/blog/blob/master/genpages.nim"><code>genpages.nim</code> <sup style="font-size:0.7em">↗</sup></a>
+<p>The file <a href="https://github.com/thisago/blog/blob/master/src/genpages.nim"><code>genpages.nim</code> <sup style="font-size:0.7em">↗</sup></a>
 compile and runs all posts and put then in <code>public/</code> dir.</p>
 <h2>Outro</h2>
 <p>That's it! Thanks for reading!</p>
@@ -104,7 +104,7 @@ You can see the source code at [thisago/blog {externalIcon}](https://github.com/
   nbText <span class="hljs-string">fmt&quot;&quot;&quot;
 ### Post name
 The post name comes from filename.  
-The module [`incl/postName.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/incl/postName.nim)
+The module [`incl/postName.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/src/blogpkg/incl/postName.nim)
 generates the post title from filename:&quot;&quot;&quot;</span>
 
   nbCode:
@@ -114,7 +114,7 @@ generates the post title from filename:&quot;&quot;&quot;</span>
 
   nbText <span class="hljs-string">fmt&quot;&quot;&quot;
 ### Generation
-The file [`genpages.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/genpages.nim)
+The file [`genpages.nim` {externalIcon}](https://github.com/thisago/blog/blob/master/src/genpages.nim)
 compile and runs all posts and put then in `public/` dir.
 
 ## Outro
