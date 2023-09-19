@@ -29,7 +29,7 @@ But now, iecook, can get the cookies from any website, just import it:
     import pkg/iecook
   nbText fmt"And run:"
   nbCodeSkip:
-    var allCookies = iecook "https://example.com"
+    let allCookies = iecook "https://example.com"
 
   nbText fmt"""The proc `iecook` returns to you all cookies of all browser's
 contexts (containers). And in chrome, since there's no multiple containers like
