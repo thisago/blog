@@ -62,7 +62,7 @@ called <a href="https://github.com/thisago/iecook/tree/9fb64ef5aafe0fadeb399245a
 <p>But now, iecook, can get the cookies from any website, just import it:</p>
 <pre><code class="nohighlight hljs nim"><span class="hljs-keyword">import</span> pkg/iecook</code></pre>
 <p>And run:</p>
-<pre><code class="nohighlight hljs nim"><span class="hljs-keyword">var</span> allCookies = iecook <span class="hljs-string">&quot;https://example.com&quot;</span></code></pre>
+<pre><code class="nohighlight hljs nim"><span class="hljs-keyword">let</span> allCookies = iecook <span class="hljs-string">&quot;https://example.com&quot;</span></code></pre>
 <p>The proc <code>iecook</code> returns to you all cookies of all browser's
 contexts (containers). And in chrome, since there's no multiple containers like
 in Firefox, just a default container is returned.</p>
@@ -134,7 +134,7 @@ But now, iecook, can get the cookies from any website, just import it:
     <span class="hljs-keyword">import</span> pkg/iecook
   nbText <span class="hljs-string">fmt&quot;And run:&quot;</span>
   nbCodeSkip:
-    <span class="hljs-keyword">var</span> allCookies = iecook <span class="hljs-string">&quot;https://example.com&quot;</span>
+    <span class="hljs-keyword">let</span> allCookies = iecook <span class="hljs-string">&quot;https://example.com&quot;</span>
 
   nbText <span class="hljs-string">fmt&quot;&quot;&quot;The proc `iecook` returns to you all cookies of all browser's
 contexts (containers). And in chrome, since there's no multiple containers like
