@@ -35,7 +35,7 @@ post:
             if f.dir.len > 0:
               tdiv(class = "post_title_category"):
                 text getPostCategory fullpath
-            a(href = fmt"{f.dir}/{f.name}.html"):
+            a(href = fmt"{f.dir}/{f.name}"):
               text filepath.toPostName
           tdiv(class = "post_description"):
             italic:

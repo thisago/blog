@@ -27,7 +27,7 @@ for filename in getAllPosts pagesDir:
       nimFile = filename & ".nim"
       path = (proc: string =
         let f = filename.replace(pagesDir, "").splitFile
-        f.dir / f.name & ".html"
+        f.dir / f.name
       )()
         
     posts.add Post(

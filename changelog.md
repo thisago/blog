@@ -5,6 +5,7 @@
 - Changed styling of post list
 - Added Git file date getting fallback when cannot get file info from repo.
 - Added `projects/iecook` post!
+- Removed `.html` from links
 
 ## 2023/08/20
 
