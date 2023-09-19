@@ -33,8 +33,7 @@ To generate a shuffled text like above is very simple, just call `shuffle`, let'
 
   var html = "Try to copy me! Let's see if you're a real hacker :P".shuffle.toHtml
   nbText fmt"<pre>{html}</pre>"
-  
-  
+
   nbText """Easy as that!
 
 ## Why?
@@ -121,9 +120,9 @@ Let's play a bit with this!
           shuffledHtml = text.antiCopy level
           if disableCss:
             applyCssState()
-      
+
       br()
-      
+
       label:
         input(`type` = "checkbox", checked = toChecked disableCss):
           proc onChange(ev: Event; n: VNode) =

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023/09/18
+
+- Changed styling of post list
+- Added Git file date getting fallback when cannot get file info from repo.
+- Added `projects/iecook` post!
+
 ## 2023/08/20
 
 - Fixed Github file urls in helloWorld post

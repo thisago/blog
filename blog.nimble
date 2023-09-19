@@ -21,6 +21,7 @@ requires "util"
 
 # post specific
 requires "htmlAntiCopy"
+requires "iecook"
 
 task runAll, "Builds and run all":
   for file in bin:

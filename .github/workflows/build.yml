@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: install nim
 
+      - name: install nim
         id: install_nim
         uses: iffy/install-nim@v3
 
