@@ -72,11 +72,11 @@ dangerous keeping installed the client extension, because a malicious applicatio
 can request your cookies without your consent.
 
 ## Project using it
-A project that uses **iecook** to get Cookies, is [clibard](https://github.com/thisago/clibard),
+An project that uses **iecook** to get Cookies is [clibard](https://github.com/thisago/clibard),
 an Google Bard CLI chat that uses the Google Bard private API
 
 ## Why iecook as name?
-This name is just **cook**ie with the `ie` moved  to start. There's no extra,
+This name is just **cook**ie with the `ie` moved  to start. There's no extra
 meaning :)
 
 ## Outro
