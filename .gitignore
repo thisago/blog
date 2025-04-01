@@ -1,4 +1,1 @@
-public/
-build/
-*_nbCodeToJs_*.nim
-*.css
+/.projectile-cache.eld
