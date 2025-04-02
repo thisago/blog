@@ -18,17 +18,13 @@
 ;; Install dependencies
 (package-install 'htmlize)
 
-
 ;; Stolen from: https://orgmode.org/worg/org-site-colophon.html
 
 (require 'ox)
 (require 'ox-html)
-(load "~/.emacs.d/.local/straight/repos/emacs-htmlize/htmlize.el" t t) ; system-dependant
 (require 'htmlize)
-
-(load "~/.emacs.d/.local/straight/repos/org-mode/contrib/lisp/ox-extra.el" t t)
-(require 'ox-extra)
-(ox-extras-activate '(ignore-headlines))
+;; (require 'ox-extra)
+;; (ox-extras-activate '(ignore-headlines))
 
 (setq
  org-html-style-default ""
@@ -38,9 +34,9 @@
  org-html-html5-fancy t
  org-html-validation-link nil
  org-html-postamble t
- org-html-postamble-format
- '(("en" "<p class=\"author\">Made with <a href=\"https://orgmode.org/worg/org-site-colophon.html\">🤎</a> by <a href=\"https://github.com/tecosaur/\" style=\"font-weight: bold; font-size: 0.9em; letter-spacing: 1px\">TEC</a></p>
-<p xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" class=\"license-text\" style=\"color: #aaa\">licensed under <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img class=\"inline\" src=\"/resources/img/external/cc-by-sa.svg\" title=\"CC-BY-SA 4.0\" alt=\"CC-BY-SA\"/></a></p>"))
+;;  org-html-postamble-format
+;;  '(("en" "<p class=\"author\">Made with <a href=\"https://orgmode.org/worg/org-site-colophon.html\">🤎</a> by <a href=\"https://github.com/tecosaur/\" style=\"font-weight: bold; font-size: 0.9em; letter-spacing: 1px\">TEC</a></p>
+;; <p xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" class=\"license-text\" style=\"color: #aaa\">licensed under <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img class=\"inline\" src=\"/resources/img/external/cc-by-sa.svg\" title=\"CC-BY-SA 4.0\" alt=\"CC-BY-SA\"/></a></p>"))
  make-backup-files nil
  debug-on-error t)
 
