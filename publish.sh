@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
-;; Stolen from: https://github.com/SystemCrafters/org-website-example/blob/1ee251e97f5b4d6c614936030203cd7368d4adc8/build-site.el
+;; Stolen from:
+;; - https://github.com/SystemCrafters/org-website-example/blob/1ee251e97f5b4d6c614936030203cd7368d4adc8/build-site.el
+;; - https://orgmode.org/worg/org-site-colophon.html
 
 ;; Set the package installation directory so that packages aren't stored in the
 ;; ~/.emacs.d/elpa path.
@@ -16,15 +18,12 @@
   (package-refresh-contents))
 
 ;; Install dependencies
-(package-install 'htmlize)
-
-;; Stolen from: https://orgmode.org/worg/org-site-colophon.html
+(unless (package-installed-p 'htmlize)
+  (package-install 'htmlize))
 
 (require 'ox)
 (require 'ox-html)
 (require 'htmlize)
-;; (require 'ox-extra)
-;; (ox-extras-activate '(ignore-headlines))
 
 (setq
  org-html-style-default ""
@@ -33,30 +32,44 @@
  org-html-doctype "html5"
  org-html-html5-fancy t
  org-html-validation-link nil
- org-html-postamble t
-;;  org-html-postamble-format
-;;  '(("en" "<p class=\"author\">Made with <a href=\"https://orgmode.org/worg/org-site-colophon.html\">🤎</a> by <a href=\"https://github.com/tecosaur/\" style=\"font-weight: bold; font-size: 0.9em; letter-spacing: 1px\">TEC</a></p>
-;; <p xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" class=\"license-text\" style=\"color: #aaa\">licensed under <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img class=\"inline\" src=\"/resources/img/external/cc-by-sa.svg\" title=\"CC-BY-SA 4.0\" alt=\"CC-BY-SA\"/></a></p>"))
  make-backup-files nil
  debug-on-error t)
 
-(let ((scss-files (directory-files-recursively default-directory "\\.scss$"))
+;; Colors
+(setq
+ color-red "\033[0;31m"
+ color-green "\033[0;32m"
+ color-yellow "\033[0;33m"
+ color-blue "\033[0;34m"
+ color-magenta "\033[0;35m"
+ color-cyan "\033[0;36m"
+ color-white "\033[0;37m"
+ color-black "\033[0;30m"
+ color-default "\033[0m")
+
+(setq
+ sass-exec "sass"
+ sass-cmd (concat sass-exec " --no-source-map %s %s"))
+
+(let ((sass-files (directory-files-recursively default-directory "\\.sass$"))
       (org-files (directory-files-recursively default-directory "\\.org$")))
-  (if (executable-find "sassc")
-      (dolist (scss-file scss-files)
-        (let ((sassc-out
-               (shell-command-to-string
-                (format "sassc %s %s"
-                        scss-file (concat (file-name-sans-extension scss-file) ".css")))))
-          (message "\033[0;35m• %s%s\033[0m" (file-relative-name scss-file default-directory)
-                   (if (string= "" sassc-out) "" (concat ":\033[31m\n" sassc-out)))))
-    (message "No sassc executable found"))
+  (if (executable-find sass-exec)
+      (message (concat color-blue "Processing sass files..." color-default))
+    (dolist (sass-file sass-files)
+      (let ((sassc-out
+             (shell-command-to-string
+              (format sass-cmd sass-file (concat (file-name-sans-extension sass-file) ".css")))))
+        (message (concat "- " color-blue "%s%s" color-default) (file-relative-name sass-file default-directory)
+                 (if (string= "" sassc-out) "" (concat ":" color-red "\n" sassc-out)))))
+    (message (concat color-red "No sass executable found" color-default)))
+
+  (message (concat color-blue "Processing org files..." color-default))
   (dolist (org-file org-files)
-    (message "\033[0;34m• %s\033[90m" (file-relative-name org-file default-directory))
     (with-current-buffer (find-file-literally org-file)
       (condition-case err
           (progn (org-html-export-to-html)
-                 (htmlize-file org-file (concat org-file ".html")))
-        (error (message "  \033[0;31m%s\033[90m"  (error-message-string err)))))))
-(message "\033[0m")
+                 (htmlize-file org-file (concat org-file ".html"))
+                 (message (concat "- " color-green "%s" color-default) (file-relative-name org-file default-directory)))
+        (error (message (concat color-red "%s" color-default)  (error-message-string err)))))))
+
 (kill-emacs 0)
