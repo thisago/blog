@@ -1,34 +1,16 @@
 #!/usr/bin/env sh
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
-;; Stolen from:
+;; Stolen/Inspired from:
 ;; - https://github.com/SystemCrafters/org-website-example/blob/1ee251e97f5b4d6c614936030203cd7368d4adc8/build-site.el
 ;; - https://orgmode.org/worg/org-site-colophon.html
 
-;; Set the package installation directory so that packages aren't stored in the
-;; ~/.emacs.d/elpa path.
-(require 'package)
-(setq package-user-dir (expand-file-name "./.packages"))
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
-
-;; Initialize the package system
-(package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
-
-;; Install dependencies
-(unless (package-installed-p 'htmlize)
-  (package-install 'htmlize))
-
 (require 'ox)
 (require 'ox-html)
-(require 'htmlize)
 
 (setq
  org-html-style-default ""
  org-html-scripts ""
- org-html-htmlize-output-type 'css
  org-html-doctype "html5"
  org-html-html5-fancy t
  org-html-validation-link nil
@@ -76,7 +58,6 @@
     (with-current-buffer (find-file-literally org-file)
       (condition-case err
           (progn (org-html-export-to-html)
-                 (htmlize-file org-file (concat org-file ".html"))
                  (message (concat "- " color-green "%s" color-default) (file-relative-name org-file default-directory)))
         (error (message (concat color-red "%s" color-default)  (error-message-string err)))))))
 
