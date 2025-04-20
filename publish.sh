@@ -49,7 +49,8 @@
 
 (setq
  sass-exec "sass"
- sass-file-regex (concat "\\.(scss|sass)$")
+ sass-file-regex "\\.sass$"
+ org-file-regex "\\.org$"
  sass-cmd (concat sass-exec " --no-source-map %s %s"))
 
 (setq
@@ -59,17 +60,15 @@
 (let ((sass-files (directory-files-recursively
                    (concat default-directory sass-dir) sass-file-regex))
       (org-files (directory-files-recursively
-                  (concat default-directory posts-dir) "\\.org$")))
+                  (concat default-directory posts-dir) org-file-regex)))
 
+  (message (concat color-blue "Processing sass files..." color-default))
   (if (executable-find sass-exec)
-      (message (concat color-blue "Processing sass files..." color-default))
-    (dolist (sass-file sass-files)
-      (printf (concat color-blue "Processing %s..." color-default) (file-relative-name sass-file default-directory))
-      (print (format sass-cmd sass-file (concat (file-name-sans-extension sass-file) ".css")))
-      (let ((sassc-out (shell-command-to-string
-                        (format sass-cmd sass-file (concat (file-name-sans-extension sass-file) ".css")))))
-        (message (concat "- " color-blue "%s%s" color-default) (file-relative-name sass-file default-directory)
-                 (if (string= "" sassc-out) "" (concat ":" color-red "\n" sassc-out)))))
+      (dolist (sass-file sass-files)
+        (let ((sassc-out (shell-command-to-string
+                          (format sass-cmd sass-file (concat (file-name-sans-extension sass-file) ".css")))))
+          (message (concat "- " color-green "%s%s" color-default) (file-relative-name sass-file default-directory)
+                   (if (string= "" sassc-out) "" (concat ":" color-red "\n" sassc-out)))))
     (message (concat color-red "No sass executable found" color-default)))
 
   (message (concat color-blue "Processing org files..." color-default))
