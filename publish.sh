@@ -5,8 +5,36 @@
 ;; - https://github.com/SystemCrafters/org-website-example/blob/1ee251e97f5b4d6c614936030203cd7368d4adc8/build-site.el
 ;; - https://orgmode.org/worg/org-site-colophon.html
 
+(require 'package)
+(setq package-user-dir (expand-file-name "./.packages"))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
+
+;; Initialize the package system
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; Install dependencies
+(unless (package-installed-p 'ox-gfm)
+  (package-install 'ox-gfm))
+
 (require 'ox)
 (require 'ox-html)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (shell . t)
+   (dot . t)
+   (clojure . t)
+   (org . t)
+   (ditaa . t)
+   (org . t)
+   (scheme . t)
+   (plantuml . t)
+   (R . t)
+   (gnuplot . t)))
 
 (setq
  org-html-style-default ""
@@ -14,6 +42,8 @@
  org-html-doctype "html5"
  org-html-html5-fancy t
  org-html-validation-link nil
+ ;; enable code block execution
+ org-confirm-babel-evaluate nil
  make-backup-files nil
  debug-on-error t)
 
@@ -57,7 +87,7 @@
   (dolist (org-file org-files)
     (with-current-buffer (find-file-literally org-file)
       (condition-case err
-          (progn (org-html-export-to-html)
+          (progn (org-gfm-export-to-markdown)
                  (message (concat "- " color-green "%s" color-default) (file-relative-name org-file default-directory)))
         (error (message (concat color-red "%s" color-default)  (error-message-string err)))))))
 

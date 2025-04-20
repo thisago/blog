@@ -5,3 +5,7 @@
 #+filetags: blog
 
 Hello World.
+
+#+begin_src sh :exports both
+pwd
+#+end_src
