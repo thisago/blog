@@ -71,4 +71,8 @@
 
 (org-publish-all t)
 
+;; Write CNAME
+(with-temp-file "public/CNAME"
+  (insert "blog.thisago.com"))
+
 (message "Build complete!")
