@@ -1,7 +1,5 @@
 #+title: thisago's blog
 
-* Useful links :noexport:
-- [[https://github.com/SystemCrafters/org-website-example][GitHub - SystemCrafters/org-website-example: An example of a website publishe...]]
-
-* Task List
+* Task List :noexport:
 ** TODO Render post creation and modify time :feature:
+** TODO Staging environment for PRs :feature:
