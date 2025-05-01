@@ -1,0 +1,87 @@
+#+title: My Personal Routine Planning
+#+filetags: personal
+#+startup: content
+
+* Intro
+I was thinking through words earlier on what's wrong on my routine planning this morning and I realized it can be a great manner to start my public [[https://swyx.io/digital-garden-tos][digital garden]].
+
+So below is my planning.
+
+
+* The Plan
+** Intention :summary:
+The goal is aggregate all I need to build a good routine:
+- Values
+- Expected Overcomes
+- Notion of Time Blocking
+
+
+** Keep In Mind
+*** Expected Overcomes & Values
+- Organized Mind :: Stop worrying on "what's next".
+- Make Life Pleasant :: The "want more" taste in the end of the day.
+- Time Is Short :: Wasting time isn't a option.
+- Procrastination Is A Sign :: Reduce the tasks load by interpolating with light and enjoyable tasks.
+- Reduce Decision Making :: Need to think on what to do next wastes your energy.
+- Eat The Frog From The Morning :: The chaos should be taken on the morning, where you're full of energy.
+
+*** Considerations
+Since the start time of the day changes accordingly my needs and desires, I'll be time-agnostic.
+
+The below visualizations considers:
+- We need 9h of rest.
+- We have a usable time-span of src_calc[:exports results]{24-9} {{{results(=15=)}}}.
+- I'll allocate at least 6h of work.
+- I need pauses on work to avoid procrastination.
+
+*** Static Inflexibility
+- Mon-Fri 8:30AM-9:00AM :: Point Daily
+- Sun-Sat 4PM-5PM :: Daily call with my best friend
+- Sat 10AM-12PM :: Call on friends' studies group
+
+*** Known Issues
+- Extend the refections due distractions (such audiobooks or social interactions).
+- Dive into hype and ignore the other tasks.
+- Procrastinate on work due lack of breaks.
+- Lack of the habit to say *NO*, overloading myself at work.
+  + New tasks aren't a break from your previous responsibility.
+- Overthinking on changing tasks.
+- Checking agenda and daily plan is currently a struggle. It should be easy as =Alt+Tab=.
+
+
+** Ideas
+- The Pomodoro break could be:
+  - Reading a book.
+  - Hearing a audiobook, taking it from refections.
+  - Learning a new thing.
+  - Talk with others via messaging.
+
+
+** Scratching The Plan
+This is my personal planning, use it as inspiration!
+*** Tasks Overview
+1. ~REQUI~ Wake up and prepare
+   - Exit bedroom
+   - Caffeine
+   - Eat
+   - Exercises
+2. =IDEAL= Plan the day
+3. =IDEAL= Technical study on other areas
+   - Bible
+   - Psychology
+4. ~REQUI~ Work @8h30min
+5. =IDEAL= Lunch @12h
+6. =IDEAL= Work @13h
+7. ~REQUI~ Reflections with my friend @16h
+8. =IDEAL= Finish the day report
+9. ~REQUI~ Shutting down
+   - Patch timeto.me export with the updated routine for tomorrow
+
+*** Idealizations
+- Finish the work before the call with Kimberly.
+- Be able to do the morning tasks.
+- Take the last bath to break thirdwork tension.
+
+*** Theories
+- If I skip day idealization, that "saved time" will be spent on a existential crisis session. Keep the mind healthy is not a optional thing.
+- Instead of considering work blocks as thirdwork-only, I can do my work tasks on there, taking advantage of the inertia already obtained from the coding process.
