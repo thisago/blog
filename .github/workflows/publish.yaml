@@ -16,6 +16,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install Dependencies
+        run: |
+          sudo apt install nodejs && \
+          npm install -g sass
+
       - name: Publish with script
         run: emacs -Q --script publish.el
 
