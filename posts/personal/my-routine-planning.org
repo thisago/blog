@@ -24,7 +24,7 @@ The goal is aggregate all I need to build a good routine:
 - Make Life Pleasant :: The "want more" taste in the end of the day.
 - Time Is Short :: Wasting time isn't a option.
 - Procrastination Is A Sign :: Reduce the tasks load by interpolating with light and enjoyable tasks.
-- Reduce Decision Making :: Need to think on what to do next wastes your energy.
+- Reduce Decision Making :: Need to decide on what to do next wastes your energy.
 - Eat The Frog From The Morning :: The chaos should be taken on the morning, where you're full of energy.
 
 *** Considerations
@@ -37,7 +37,7 @@ The below visualizations considers:
 - I need pauses on work to avoid procrastination.
 
 *** Static Inflexibility
-- Mon-Fri 8:30AM-9:00AM :: Point Daily
+- Mon-Fri 8:30AM-9:00AM :: Work Daily
 - Sun-Sat 4PM-5PM :: Daily call with my best friend
 - Sat 10AM-12PM :: Call on friends' studies group
 
@@ -69,8 +69,6 @@ This is my personal planning, use it as inspiration!
    - Exercises
 2. =IDEAL= Plan the day
 3. =IDEAL= Technical study on other areas
-   - Bible
-   - Psychology
 4. ~REQUI~ Work @8h30min
 5. =IDEAL= Lunch @12h
 6. =IDEAL= Work @13h
@@ -82,8 +80,7 @@ This is my personal planning, use it as inspiration!
 *** Idealizations
 - Finish the work before the call with my friend.
 - Be able to do the morning tasks.
-- Take the last bath to break thirdwork tension.
+- Take the last bath to break the work tension.
 
 *** Theories
 - If I skip day idealization, that "saved time" will be spent on a existential crisis session. Keep the mind healthy is not a optional thing.
-- Instead of considering work blocks as thirdwork-only, I can do my work tasks on there, taking advantage of the inertia already obtained from the coding process.
