@@ -1,5 +1,5 @@
 #+title: Effects Of Demonizing Things
-#+filetags: draft
+#+filetags: drafts
 
 * Organizing the Thoughts :noexport:
 This is the first post of this blog. I'm excited.
