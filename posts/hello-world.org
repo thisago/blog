@@ -4,7 +4,7 @@
 #+title: Hello World
 #+filetags: blog
 
-Hello World.
+Hello World.[fn:: Foot note]
 
 #+begin_src sh :exports both
 pwd

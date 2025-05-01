@@ -1,0 +1,28 @@
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build-org-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Emacs
+        id: install-emacs
+        uses: purcell/setup-emacs@master
+        with:
+          version: '29.4'
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish with script
+        run: emacs -Q --script publish.el
+
+      - name: Deploy on Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
