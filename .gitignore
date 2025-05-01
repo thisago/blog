@@ -1,7 +1,5 @@
 /.projectile-cache.eld
 /.packages/
-*.html
-*.css
-*.md
 .aider*
-.eask
+/public/
+index.org

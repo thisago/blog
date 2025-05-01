@@ -1,9 +1,11 @@
 #+title: My Personal Routine Planning
-#+filetags: personal
+#+filetags: personal docs
 #+startup: content
 
 * Intro
-I was thinking through words earlier on what's wrong on my routine planning this morning and I realized it can be a great manner to start my public [[https://swyx.io/digital-garden-tos][digital garden]].
+:PROPERTIES:
+:END:
+I was thinking through words earlier on what's wrong on my routine planning this morning and I realized it can be a great manner to start my public [[https://swyx.io/digital-garden-tos][digital garden ↗]].
 
 So below is my planning.
 
@@ -29,8 +31,8 @@ The goal is aggregate all I need to build a good routine:
 Since the start time of the day changes accordingly my needs and desires, I'll be time-agnostic.
 
 The below visualizations considers:
-- We need 9h of rest.
-- We have a usable time-span of src_calc[:exports results]{24-9} {{{results(=15=)}}}.
+- We need 8h of rest.
+- We have a available time-span of src_calc[:exports results]{24-8} {{{results(=16=)}}} hours.
 - I'll allocate at least 6h of work.
 - I need pauses on work to avoid procrastination.
 
