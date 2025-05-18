@@ -11,6 +11,9 @@
 ;; Install htmlize for syntax highlighting
 (unless (package-installed-p 'htmlize)
   (package-install 'htmlize))
+;; Install ox-rss for RSS feed generation
+(unless (package-installed-p 'ox-rss)
+  (package-install 'ox-rss))
 
 (require 'org)
 
@@ -45,6 +48,7 @@
  'org-babel-load-languages
  '((shell . t)
    (dot . t)
+   (calc . t)
    (org . t)))
 
 (setq
@@ -52,22 +56,35 @@
  org-confirm-babel-evaluate nil
  make-backup-files nil
  org-src-fontify-natively t
- org-publish-project-alist (list
-                            (list "org-site:main"
-                                  :recursive t
-                                  :base-directory "./posts"
-                                  :publishing-function 'org-html-publish-to-html
-                                  :publishing-directory "./public"
-                                  :exclude "drafts"
-                                  :with-author nil
-                                  :with-toc t
-                                  :time-stamp-file t
-                                  :section-numbers nil
-                                  :auto-sitemap t
-                                  :sitemap-filename "index.org"
-                                  :sitemap-title "Posts"
-                                  :with-timestamps t
-                                  :with-footnotes t)))
+ org-publish-project-alist '(("org-site:main"
+                              :recursive t
+                              :base-directory "./posts"
+                              :publishing-function (org-html-publish-to-html)
+                              :publishing-directory "./public"
+                              :exclude "drafts"
+                              :with-author nil
+                              :with-toc t
+                              :time-stamp-file t
+                              :section-numbers nil
+                              :auto-sitemap t
+                              :sitemap-filename "index.org"
+                              :sitemap-title "Posts"
+                              :with-timestamps nil
+                              :time-stamp-file nil
+                              :with-footnotes t)
+                             ("homepage_rss"
+                              :base-directory "./posts"
+                              :base-extension "org"
+                              ;; :rss-image-url "http://lumiere.ens.fr/~guerry/images/faces/15.png"
+                              :html-link-home "http://blog.thisago.com/"
+                              :html-link-use-abs-url t
+                              :rss-extension "xml"
+                              :publishing-directory "./public"
+                              :publishing-function (org-rss-publish-to-rss)
+                              :section-numbers nil
+                              :exclude ".*"            ;; To exclude all files...
+                              :include ("index.org")   ;; ... except index.org.
+                              :table-of-contents nil)))
 
 (org-publish-all t)
 

@@ -1,0 +1,134 @@
+#+title: CDI or Real State
+#+filetags: finances
+#+startup: content
+
+#+begin_quote
+| ~~
+
+This post relies heavily on current Brazil's low-risk investment revenue rates.
+
+For the non-brazilians, it serves only as a template.[fn:: You can copy this Org File and evaluate with different values.]
+#+end_quote
+
+After ignoring the investment world in name of comfort, recently I moved my cash into a low-risk investment, based on Brazilian CDI (/Certificado de Depósito Interbancário/), a benchmark interest rate used in Brazil's financial markets commonly for fixed-income investments that changes daily.
+
+The banking says things like "(110%|115%) of CDI but it may change", so I don't even know the exact "percentage on top of the CDI" that was really applied. There's also a lot of taxes, so I'll ignore all this percentages and over-complicated values and consider only the liquid values: How much I applied and how much it became.
+
+I was skeptic about it's feasibility because /there's no free lunch/ but I was also worried about high inflation levels here in Brazil and wanted to prevent it in somehow.
+
+Below are my results.
+
+* The data
+| 󰌵 Used currency is BRL.
+** Applied value
+#+name: applied
+#+begin_example
+5000
+#+end_example
+** Liquid total after earnings
+#+name: became
+#+begin_example
+5058.28
+#+end_example
+** Days from the application day until today
+The days range: [2025-04-10 Thu]--[2025-05-18 Sun]
+
+Becomes:
+#+name: days
+#+begin_example
+39
+#+end_example
+
+* Calculations
+** Earned percentage on above values
+#+name: earning-percentage
+#+begin_src calc :var applied=applied resultingBalance=became :exports both
+resultingBalance / applied - 1
+#+end_src
+
+#+RESULTS: earning-percentage
+: 0.011656
+
+*** Checking the percentage
+Just to make sure the percentage is right.
+#+begin_src calc :var percentage=earning-percentage applied=applied :exports both
+applied * percentage
+#+end_src
+
+#+RESULTS:
+: 58.28
+
+** Dividing the percentage per day
+Since our math are based on a src_calc[:exports results :var x=days]{x} {{{results(=39=)}}} days investment, let's get the average percentage earned per day.
+#+name: percentage-per-day
+#+begin_src calc :var percentage=earning-percentage days=days :exports both
+percentage / days
+#+end_src
+
+#+RESULTS: percentage-per-day
+: 2.98871794872e-4
+
+** Rule of three on the earnings
+Let's calculate how much it will revenue on some arbitrary values.
+*** Daily
+**** On 1k
+#+begin_src calc :var dailyPercentage=percentage-per-day :exports both
+1000 * dailyPercentage
+#+end_src
+
+#+RESULTS:
+: 0.298871794872
+
+**** On 100k
+#+begin_src calc :var dailyPercentage=percentage-per-day :exports both
+100000 * dailyPercentage
+#+end_src
+
+#+RESULTS:
+: 29.8871794872
+
+**** On 300k
+#+begin_src calc :var dailyPercentage=percentage-per-day :exports both
+300000 * dailyPercentage
+#+end_src
+
+#+RESULTS:
+: 89.6615384616
+
+*** Monthly
+First let's multiply the daily percentage by 30:
+#+name: percentage-per-month
+#+begin_src calc :var dailyPercentage=percentage-per-day :exports both
+dailyPercentage * 30
+#+end_src
+
+#+RESULTS: percentage-per-month
+: 8.96615384616e-3
+
+**** On 1k
+#+begin_src calc :var monthlyPercentage=percentage-per-month :exports both
+1000 * monthlyPercentage
+#+end_src
+
+#+RESULTS:
+: 8.96615384616
+
+**** On 100k
+#+begin_src calc :var monthlyPercentage=percentage-per-month :exports both
+100000 * monthlyPercentage
+#+end_src
+
+#+RESULTS:
+: 896.615384616
+
+**** On 300k
+#+begin_src calc :var monthlyPercentage=percentage-per-month :exports both
+300000 * monthlyPercentage
+#+end_src
+
+#+RESULTS:
+: 2689.84615385
+
+
+* Conclusion
+The last projection that calculates the revenue of a 300k investment in 30 days shows that for now, it seems better to keep money invested on this fund instead of investing on a 300k house, considering its rent will be in a range of 1500 to 3000 BRL.
