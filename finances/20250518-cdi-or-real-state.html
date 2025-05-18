@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CDI or Real State</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/theme/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <h1><a href="/">thisago's blog</a></h1>
+</header>
+</div>
+<div id="content" class="content">
+<h1 class="title">CDI or Real State</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org21c00a2">The data</a>
+<ul>
+<li><a href="#org5081e65">Applied value</a></li>
+<li><a href="#org971d3d4">Liquid total after earnings</a></li>
+<li><a href="#orgfe8c740">Days from the application day until today</a></li>
+</ul>
+</li>
+<li><a href="#orgcfcf234">Calculations</a>
+<ul>
+<li><a href="#org1f05d01">Earned percentage on above values</a>
+<ul>
+<li><a href="#org7e03319">Checking the percentage</a></li>
+</ul>
+</li>
+<li><a href="#orgb84ddb6">Dividing the percentage per day</a></li>
+<li><a href="#org2717fee">Rule of three on the earnings</a>
+<ul>
+<li><a href="#org6077f17">Daily</a></li>
+<li><a href="#org7759bfa">Monthly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd7d8061">Conclusion</a></li>
+</ul>
+</div>
+</div>
+<blockquote>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><code></code></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+This post relies heavily on current Brazil's low-risk investment revenue rates.
+</p>
+
+<p>
+For the non-brazilians, it serves only as a template.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+</blockquote>
+
+<p>
+After ignoring the investment world in name of comfort, recently I moved my cash into a low-risk investment, based on Brazilian CDI (<i>Certificado de Depósito Interbancário</i>), a benchmark interest rate used in Brazil's financial markets commonly for fixed-income investments that changes daily.
+</p>
+
+<p>
+The banking says things like "(110%|115%) of CDI but it may change", so I don't even know the exact "percentage on top of the CDI" that was really applied. There's also a lot of taxes, so I'll ignore all this percentages and over-complicated values and consider only the liquid values: How much I applied and how much it became.
+</p>
+
+<p>
+I was skeptic about it's feasibility because <i>there's no free lunch</i> but I was also worried about high inflation levels here in Brazil and wanted to prevent it in somehow.
+</p>
+
+<p>
+Below are my results.
+</p>
+
+<div id="outline-container-org21c00a2" class="outline-2">
+<h2 id="org21c00a2">The data</h2>
+<div class="outline-text-2" id="text-org21c00a2">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">󰌵 Used currency is BRL.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org5081e65" class="outline-3">
+<h3 id="org5081e65">Applied value</h3>
+<div class="outline-text-3" id="text-org5081e65">
+<pre class="example" id="org92c9df5">
+5000
+</pre>
+</div>
+</div>
+<div id="outline-container-org971d3d4" class="outline-3">
+<h3 id="org971d3d4">Liquid total after earnings</h3>
+<div class="outline-text-3" id="text-org971d3d4">
+<pre class="example" id="orge8d084e">
+5058.28
+</pre>
+</div>
+</div>
+<div id="outline-container-orgfe8c740" class="outline-3">
+<h3 id="orgfe8c740">Days from the application day until today</h3>
+<div class="outline-text-3" id="text-orgfe8c740">
+<p>
+The days range: <span class="timestamp-wrapper"><span class="timestamp">[2025-04-10 Thu]&#x2013;[2025-05-18 Sun]</span></span>
+</p>
+
+<p>
+Becomes:
+</p>
+<pre class="example" id="org7dbb52e">
+39
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcfcf234" class="outline-2">
+<h2 id="orgcfcf234">Calculations</h2>
+<div class="outline-text-2" id="text-orgcfcf234">
+</div>
+<div id="outline-container-org1f05d01" class="outline-3">
+<h3 id="org1f05d01">Earned percentage on above values</h3>
+<div class="outline-text-3" id="text-org1f05d01">
+<div class="org-src-container">
+<pre class="src src-calc" id="org1d17c48">resultingBalance / applied - 1
+</pre>
+</div>
+
+<pre class="example">
+0.011656
+</pre>
+</div>
+
+<div id="outline-container-org7e03319" class="outline-4">
+<h4 id="org7e03319">Checking the percentage</h4>
+<div class="outline-text-4" id="text-org7e03319">
+<p>
+Just to make sure the percentage is right.
+</p>
+<div class="org-src-container">
+<pre class="src src-calc">applied * percentage
+</pre>
+</div>
+
+<pre class="example">
+58.28
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb84ddb6" class="outline-3">
+<h3 id="orgb84ddb6">Dividing the percentage per day</h3>
+<div class="outline-text-3" id="text-orgb84ddb6">
+<p>
+Since our math are based on a <code>39</code> days investment, let's get the average percentage earned per day.
+</p>
+<div class="org-src-container">
+<pre class="src src-calc" id="org089f5dc">percentage / days
+</pre>
+</div>
+
+<pre class="example">
+2.98871794872e-4
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org2717fee" class="outline-3">
+<h3 id="org2717fee">Rule of three on the earnings</h3>
+<div class="outline-text-3" id="text-org2717fee">
+<p>
+Let's calculate how much it will revenue on some arbitrary values.
+</p>
+</div>
+<div id="outline-container-org6077f17" class="outline-4">
+<h4 id="org6077f17">Daily</h4>
+<div class="outline-text-4" id="text-org6077f17">
+</div>
+<ul class="org-ul">
+<li><a id="orgbd6a8e5"></a>On 1k<br>
+<div class="outline-text-5" id="text-orgbd6a8e5">
+<div class="org-src-container">
+<pre class="src src-calc">1000 * dailyPercentage
+</pre>
+</div>
+
+<pre class="example">
+0.298871794872
+</pre>
+</div>
+</li>
+
+<li><a id="orgc39a287"></a>On 100k<br>
+<div class="outline-text-5" id="text-orgc39a287">
+<div class="org-src-container">
+<pre class="src src-calc">100000 * dailyPercentage
+</pre>
+</div>
+
+<pre class="example">
+29.8871794872
+</pre>
+</div>
+</li>
+
+<li><a id="org0074c0b"></a>On 300k<br>
+<div class="outline-text-5" id="text-org0074c0b">
+<div class="org-src-container">
+<pre class="src src-calc">300000 * dailyPercentage
+</pre>
+</div>
+
+<pre class="example">
+89.6615384616
+</pre>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org7759bfa" class="outline-4">
+<h4 id="org7759bfa">Monthly</h4>
+<div class="outline-text-4" id="text-org7759bfa">
+<p>
+First let's multiply the daily percentage by 30:
+</p>
+<div class="org-src-container">
+<pre class="src src-calc" id="orgf2e0c66">dailyPercentage * 30
+</pre>
+</div>
+
+<pre class="example">
+8.96615384616e-3
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgfeaefea"></a>On 1k<br>
+<div class="outline-text-5" id="text-orgfeaefea">
+<div class="org-src-container">
+<pre class="src src-calc">1000 * monthlyPercentage
+</pre>
+</div>
+
+<pre class="example">
+8.96615384616
+</pre>
+</div>
+</li>
+
+<li><a id="org1268ef2"></a>On 100k<br>
+<div class="outline-text-5" id="text-org1268ef2">
+<div class="org-src-container">
+<pre class="src src-calc">100000 * monthlyPercentage
+</pre>
+</div>
+
+<pre class="example">
+896.615384616
+</pre>
+</div>
+</li>
+
+<li><a id="orgab72d14"></a>On 300k<br>
+<div class="outline-text-5" id="text-orgab72d14">
+<div class="org-src-container">
+<pre class="src src-calc">300000 * monthlyPercentage
+</pre>
+</div>
+
+<pre class="example">
+2689.84615385
+</pre>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd7d8061" class="outline-2">
+<h2 id="orgd7d8061">Conclusion</h2>
+<div class="outline-text-2" id="text-orgd7d8061">
+<p>
+The last projection that calculates the revenue of a 300k investment in 30 days shows that for now, it seems better to keep money invested on this fund instead of investing on a 300k house, considering its rent will be in a range of 1500 to 3000 BRL.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">You can copy this Org File and evaluate with different values.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+See the source code <a href="https://github.com/thisago/blog">here</a>.
+</div>
+</body>
+</html>

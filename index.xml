@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Posts</title>
+  <atom:link href="http://blog.thisago.com/index.xml" rel="self" type="application/rss+xml" />
+  <link>http://blog.thisago.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 18 May 2025 14:40:46 +0000</pubDate>
+  <lastBuildDate>Sun, 18 May 2025 14:40:46 +0000</lastBuildDate>
+  <generator>Emacs 29.4 Org-mode 9.6.15</generator>
+  <webMaster>runner@fv-az1915-796 (nil)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Posts</title>
+    <link>http://blog.thisago.com/</link>
+  </image>
+
+  <ul class="org-ul">
+    <li><a href="20250419-hello-world.html">Hello World</a></li>
+    <li>finances
+    <ul class="org-ul">
+      <li><a href="finances/20250518-cdi-or-real-state.html">CDI or Real State</a></li>
+    </ul></li>
+    <li>personal
+    <ul class="org-ul">
+      <li><a href="personal/20250501-my-routine-planning.html">My Personal Routine Planning</a></li>
+    </ul></li>
+  </ul>
+</channel>
+</rss>
