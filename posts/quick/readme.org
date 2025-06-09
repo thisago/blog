@@ -1,0 +1,6 @@
+#+title: Cards
+
+* Conventions
+- Ascii Art required
+- Less than 1 minute of reading
+- Enjoyable and insightful

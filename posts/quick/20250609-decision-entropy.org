@@ -1,0 +1,25 @@
+#+title: Decision Entropy
+#+filetags: decision entropy
+#+include: _base.org
+
+Every decision is another irrevocable byte in the entropy of your life.
+
+Made decisions could not be undone, they're your past.
+
+The only way to change the past is to make new decisions in the present.
+
+But don't get fooled, waiting is also a decision.
+
+#+begin_example
+    Start
+      |
+      /\
+     /\/\
+    /\/\/\
+   /\/\/\/\
+  /\/\/\/\/\
+ /\/\/\/\/\/\
+/\/\/\/\/\/\/\
+  |     |     |
+ John  Rob   Ann
+#+end_example

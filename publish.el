@@ -31,6 +31,7 @@
   (make-directory (file-name-directory output-file) t)
   (shell-command (format "sass --no-source-map -s compressed %s %s" main-file output-file)))
 (build-sass "theme/index.sass" "public/theme/style.css")
+(build-sass "theme/quick.sass" "public/theme/quick.css")
 
 (defun read-file (filename)
   "Read the contents of the FILENAME and return it as a string."
@@ -61,7 +62,7 @@
                               :base-directory "./posts"
                               :publishing-function (org-html-publish-to-html)
                               :publishing-directory "./public"
-                              :exclude "drafts"
+                              :exclude "drafts\\|readme\\|_base"
                               :with-author nil
                               :with-toc t
                               :time-stamp-file t
