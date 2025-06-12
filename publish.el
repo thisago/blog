@@ -43,16 +43,14 @@
 
 (defun my/org-publish-sitemap-entry (entry style project)
   "Format ENTRY in sitemap, showing date and title."
-  (let (dir-name ((directory-name-p entry)))
-    (if dir-name
-        (org-publish-sitemap-default-entry entry style project)
-      (let* ((date (org-publish-find-date entry project))
-             (title (org-publish-find-title entry project)))
-        (format "%s =%s= [[file:%s][%s]]"
-                dir-name
-                (format-time-string "%Y-%m-%d" date)
-                entry
-                title)))))
+  (if (directory-name-p entry)
+      (org-publish-sitemap-default-entry entry style project)
+    (let* ((date (org-publish-find-date entry project))
+           (title (org-publish-find-title entry project)))
+      (format "=%s= [[file:%s][%s]]"
+              (format-time-string "%Y-%m-%d" date)
+              entry
+              title))))
 
 ;; Customize the HTML output
 (setq org-html-head-include-default-style nil
