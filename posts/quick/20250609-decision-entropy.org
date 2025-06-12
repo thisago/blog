@@ -1,4 +1,5 @@
 #+title: Decision Entropy
+#+DATE: <2025-06-09 Mon>
 #+filetags: decision entropy
 #+include: _base.org
 

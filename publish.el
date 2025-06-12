@@ -1,3 +1,5 @@
+#!/usr/bin/env -S emacs -Q --script
+
 (require 'package)
 (setq package-user-dir (expand-file-name "./.packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -39,6 +41,19 @@
     (insert-file-contents filename)
     (buffer-string)))
 
+(defun my/org-publish-sitemap-entry (entry style project)
+  "Format ENTRY in sitemap, showing date and title."
+  (let (dir-name ((directory-name-p entry)))
+    (if dir-name
+        (org-publish-sitemap-default-entry entry style project)
+      (let* ((date (org-publish-find-date entry project))
+             (title (org-publish-find-title entry project)))
+        (format "%s =%s= [[file:%s][%s]]"
+                dir-name
+                (format-time-string "%Y-%m-%d" date)
+                entry
+                title)))))
+
 ;; Customize the HTML output
 (setq org-html-head-include-default-style nil
       org-html-head (read-file "templates/head.html")
@@ -70,6 +85,9 @@
                               :auto-sitemap t
                               :sitemap-filename "index.org"
                               :sitemap-title "Posts"
+                              :sitemap-sort-files anti-chronologically
+                              :sitemap-format-entry my/org-publish-sitemap-entry
+                              ;; :sitemap-style list
                               :with-timestamps nil
                               :time-stamp-file nil
                               :with-footnotes t)

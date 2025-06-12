@@ -1,4 +1,5 @@
 #+title: My Personal Routine Planning
+#+DATE: <2025-05-01 Thu>
 #+filetags: personal docs
 #+startup: content
 
