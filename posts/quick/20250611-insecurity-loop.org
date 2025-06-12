@@ -1,0 +1,22 @@
+#+title: Insecurity Loop
+
+If you get insecure from your own insecurity, you'll fail.
+
+Same for:
+- Get anxious of being anxious.
+- Fear your own fears.
+- Get stressed of being stressed.
+
+It's like microphony, it gets loud and loud... And then, you fuck with something.[fn:: See first rule's sub-chapter /Malfunction/ at /12 Rules for Life/ from Jordan Peterson]
+
+Don't let yourself enter the Loop from Hell.[fn:: See chapter 1 of book /The Subtle Art of Not Giving a Fuck/ from Mark Manson]
+
+#+begin_example
+       _____
+_     /     \
+ \   / LOOP  \
+ |  |   __    |
+ |  |  |  v   |
+ |  |  \__    |
+ |  |         |
+#+end_example
