@@ -14,10 +14,10 @@
   <link>http://blog.thisago.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 12 Jun 2025 10:08:30 +0000</pubDate>
-  <lastBuildDate>Thu, 12 Jun 2025 10:08:30 +0000</lastBuildDate>
+  <pubDate>Thu, 12 Jun 2025 21:33:50 +0000</pubDate>
+  <lastBuildDate>Thu, 12 Jun 2025 21:33:50 +0000</lastBuildDate>
   <generator>Emacs 29.4 Org-mode 9.6.15</generator>
-  <webMaster>runner@fv-az790-827 (nil)</webMaster>
+  <webMaster>runner@fv-az2210-267 (nil)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Posts</title>
@@ -25,27 +25,27 @@
   </image>
 
   <ul class="org-ul">
-    <li><a href="20250419-hello-world.html">Hello World</a></li>
-    <li>copied
+    <li><code>2025-04-19</code> <a href="20250419-hello-world.html">Hello World</a></li>
+    <li>self
     <ul class="org-ul">
-      <li><a href="copied/20250607-4chan_forMyAnons_pack.html">Self-Improvement Advises from 4Chan</a></li>
-    </ul></li>
-    <li>finances
-    <ul class="org-ul">
-      <li><a href="finances/20250518-cdi-or-real-state.html">CDI or Real State</a></li>
+      <li><code>2025-06-12</code> <a href="self/20250610-the-most-hated-ally.html">The Most Hated Ally</a></li>
     </ul></li>
     <li>personal
     <ul class="org-ul">
-      <li><a href="personal/20250501-my-routine-planning.html">My Personal Routine Planning</a></li>
+      <li><code>2025-05-01</code> <a href="personal/20250501-my-routine-planning.html">My Personal Routine Planning</a></li>
+    </ul></li>
+    <li>finances
+    <ul class="org-ul">
+      <li><code>2025-05-18</code> <a href="finances/20250518-cdi-or-real-state.html">CDI or Real State</a></li>
     </ul></li>
     <li>quick
     <ul class="org-ul">
-      <li><a href="quick/20250609-decision-entropy.html">Decision Entropy</a></li>
-      <li><a href="quick/20250611-insecurity-loop.html">Insecurity Loop</a></li>
+      <li><code>2025-06-11</code> <a href="quick/20250611-insecurity-loop.html">Insecurity Loop</a></li>
+      <li><code>2025-06-09</code> <a href="quick/20250609-decision-entropy.html">Decision Entropy</a></li>
     </ul></li>
-    <li>self
+    <li>copied
     <ul class="org-ul">
-      <li><a href="self/20250610-the-most-hated-ally.html">The Most Hated Ally</a></li>
+      <li><code>2025-06-07</code> <a href="copied/20250607-4chan_forMyAnons_pack.html">Self-Improvement Advises from 4Chan</a></li>
     </ul></li>
   </ul>
 </channel>
