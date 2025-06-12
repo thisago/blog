@@ -14,10 +14,10 @@
   <link>http://blog.thisago.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 10 Jun 2025 12:40:23 +0000</pubDate>
-  <lastBuildDate>Tue, 10 Jun 2025 12:40:23 +0000</lastBuildDate>
+  <pubDate>Thu, 12 Jun 2025 09:46:42 +0000</pubDate>
+  <lastBuildDate>Thu, 12 Jun 2025 09:46:42 +0000</lastBuildDate>
   <generator>Emacs 29.4 Org-mode 9.6.15</generator>
-  <webMaster>runner@fv-az1296-970 (nil)</webMaster>
+  <webMaster>runner@fv-az2246-531 (nil)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Posts</title>
@@ -41,6 +41,7 @@
     <li>quick
     <ul class="org-ul">
       <li><a href="quick/20250609-decision-entropy.html">Decision Entropy</a></li>
+      <li><a href="quick/20250611-insecurity-loop.html">Insecurity Loop</a></li>
     </ul></li>
     <li>self
     <ul class="org-ul">
