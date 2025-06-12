@@ -1,4 +1,6 @@
 #+title: Insecurity Loop
+#+filetags: insecurity
+#+include: _base.org
 
 If you get insecure from your own insecurity, you'll fail.
 
