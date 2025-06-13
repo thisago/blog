@@ -14,10 +14,10 @@
   <link>http://blog.thisago.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 12 Jun 2025 21:33:50 +0000</pubDate>
-  <lastBuildDate>Thu, 12 Jun 2025 21:33:50 +0000</lastBuildDate>
+  <pubDate>Fri, 13 Jun 2025 21:09:40 +0000</pubDate>
+  <lastBuildDate>Fri, 13 Jun 2025 21:09:40 +0000</lastBuildDate>
   <generator>Emacs 29.4 Org-mode 9.6.15</generator>
-  <webMaster>runner@fv-az2210-267 (nil)</webMaster>
+  <webMaster>runner@fv-az805-13 (nil)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Posts</title>
@@ -28,7 +28,7 @@
     <li><code>2025-04-19</code> <a href="20250419-hello-world.html">Hello World</a></li>
     <li>self
     <ul class="org-ul">
-      <li><code>2025-06-12</code> <a href="self/20250610-the-most-hated-ally.html">The Most Hated Ally</a></li>
+      <li><code>2025-06-13</code> <a href="self/20250610-the-most-hated-ally.html">The Most Hated Ally</a></li>
     </ul></li>
     <li>personal
     <ul class="org-ul">
@@ -40,6 +40,7 @@
     </ul></li>
     <li>quick
     <ul class="org-ul">
+      <li><code>2025-06-13</code> <a href="quick/20250613-mocked-difficulty.html">Mocked Difficulty</a></li>
       <li><code>2025-06-11</code> <a href="quick/20250611-insecurity-loop.html">Insecurity Loop</a></li>
       <li><code>2025-06-09</code> <a href="quick/20250609-decision-entropy.html">Decision Entropy</a></li>
     </ul></li>
