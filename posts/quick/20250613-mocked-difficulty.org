@@ -1,0 +1,22 @@
+#+title: Mocked Difficulty
+#+DATE: <2025-06-13 Fri>
+#+filetags: challenge life prudence
+#+include: _base.org
+
+When life gets easy, make it hard. So when it gets tough, you're prepared.
+
+#+begin_example
+   /\
+  /  \
+  |  |
+  |  |
+  |  |
+  |  |
+  |  |
+ /____\
+   ||
+   ||
+   ||
+   ||
+   \/
+#+end_example
