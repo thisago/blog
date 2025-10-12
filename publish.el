@@ -28,10 +28,8 @@
 ;; Build SASS
 (defun build-sass (main-file output-file)
   "Build SASS MAIN-FILE using the command line into OUTPUT-FILE."
-  (unless (executable-find "sass")
-    (error "SASS is not installed or not in your PATH"))
   (make-directory (file-name-directory output-file) t)
-  (shell-command (format "sass --no-source-map -s compressed %s %s" main-file output-file)))
+  (shell-command (format "npx sass --no-source-map -s compressed %s %s" main-file output-file)))
 (build-sass "theme/index.sass" "public/theme/style.css")
 (build-sass "theme/quick.sass" "public/theme/quick.css")
 
@@ -46,11 +44,11 @@
   (if (directory-name-p entry)
       (org-publish-sitemap-default-entry entry style project)
     (let* ((date (org-publish-find-date entry project))
+           (dir (or (file-name-directory entry) "/"))
            (title (org-publish-find-title entry project)))
-      (format "=%s= [[file:%s][%s]]"
+      (format "=%s= [[file:%s][%s %s]]"
               (format-time-string "%Y-%m-%d" date)
-              entry
-              title))))
+              entry dir title))))
 
 ;; Customize the HTML output
 (setq org-html-head-include-default-style nil
@@ -75,7 +73,7 @@
                               :base-directory "./posts"
                               :publishing-function (org-html-publish-to-html)
                               :publishing-directory "./public"
-                              :exclude "drafts\\|readme\\|_base"
+                              :exclude "drafts\\|readme\\|_base\\|index"
                               :with-author nil
                               :with-toc t
                               :time-stamp-file t
@@ -85,7 +83,7 @@
                               :sitemap-title "Posts"
                               :sitemap-sort-files anti-chronologically
                               :sitemap-format-entry my/org-publish-sitemap-entry
-                              ;; :sitemap-style list
+                              :sitemap-style list
                               :with-timestamps nil
                               :time-stamp-file nil
                               :with-footnotes t)

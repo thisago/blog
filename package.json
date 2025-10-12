@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "description": "Build-time dependencies",
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "serve": "^14.2.5"
+  }
+}

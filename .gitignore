@@ -2,4 +2,5 @@
 /.packages/
 .aider*
 /public/
-index.org
+/node_modules/
+/posts/index.org

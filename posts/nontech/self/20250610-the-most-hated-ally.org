@@ -1,4 +1,5 @@
 #+title: The Most Hated Ally
+#+DATE: <2025-06-10 Sun>
 #+filetags: awareness
 
 #+begin_quote

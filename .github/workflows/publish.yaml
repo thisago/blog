@@ -6,23 +6,21 @@ jobs:
   build-org-to-gh-pages:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Install Emacs
         id: install-emacs
         uses: purcell/setup-emacs@master
         with:
           version: '29.4'
 
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Install Dependencies
         run: |
-          sudo apt install nodejs && \
-          npm install -g sass
+          make setup
 
       - name: Publish with script
-        run: emacs -Q --script publish.el
+        run: |
+          make
 
       - name: Deploy on Github Pages
         uses: peaceiris/actions-gh-pages@v3
