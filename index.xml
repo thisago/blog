@@ -14,10 +14,10 @@
   <link>http://blog.thisago.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 14 Jun 2025 21:02:12 +0000</pubDate>
-  <lastBuildDate>Sat, 14 Jun 2025 21:02:12 +0000</lastBuildDate>
+  <pubDate>Sun, 12 Oct 2025 20:44:59 +0000</pubDate>
+  <lastBuildDate>Sun, 12 Oct 2025 20:44:59 +0000</lastBuildDate>
   <generator>Emacs 29.4 Org-mode 9.6.15</generator>
-  <webMaster>runner@fv-az2241-418 (nil)</webMaster>
+  <webMaster>runner@runnervmwhb2z (nil)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Posts</title>
@@ -25,30 +25,15 @@
   </image>
 
   <ul class="org-ul">
-    <li><code>2025-04-19</code> <a href="20250419-hello-world.html">Hello World</a></li>
-    <li>self
-    <ul class="org-ul">
-      <li><code>2025-06-14</code> <a href="self/20250610-the-most-hated-ally.html">The Most Hated Ally</a></li>
-    </ul></li>
-    <li>personal
-    <ul class="org-ul">
-      <li><code>2025-05-01</code> <a href="personal/20250501-my-routine-planning.html">My Personal Routine Planning</a></li>
-    </ul></li>
-    <li>finances
-    <ul class="org-ul">
-      <li><code>2025-05-18</code> <a href="finances/20250518-cdi-or-real-state.html">CDI or Real State</a></li>
-    </ul></li>
-    <li>copied
-    <ul class="org-ul">
-      <li><code>2025-06-07</code> <a href="copied/20250607-4chan_forMyAnons_pack.html">Self-Improvement Advises from 4Chan</a></li>
-    </ul></li>
-    <li>quick
-    <ul class="org-ul">
-      <li><code>2025-06-14</code> <a href="quick/20250614-primal-power.html">Primal Power</a></li>
-      <li><code>2025-06-13</code> <a href="quick/20250613-mocked-difficulty.html">Mocked Difficulty</a></li>
-      <li><code>2025-06-11</code> <a href="quick/20250611-insecurity-loop.html">Insecurity Loop</a></li>
-      <li><code>2025-06-09</code> <a href="quick/20250609-decision-entropy.html">Decision Entropy</a></li>
-    </ul></li>
+    <li><code>2025-06-14</code> <a href="nontech/quick/20250614-primal-power.html">nontech/quick/ Primal Power</a></li>
+    <li><code>2025-06-13</code> <a href="nontech/quick/20250613-mocked-difficulty.html">nontech/quick/ Mocked Difficulty</a></li>
+    <li><code>2025-06-11</code> <a href="nontech/quick/20250611-insecurity-loop.html">nontech/quick/ Insecurity Loop</a></li>
+    <li><code>2025-06-10</code> <a href="nontech/self/20250610-the-most-hated-ally.html">nontech/self/ The Most Hated Ally</a></li>
+    <li><code>2025-06-09</code> <a href="nontech/quick/20250609-decision-entropy.html">nontech/quick/ Decision Entropy</a></li>
+    <li><code>2025-06-07</code> <a href="nontech/copied/20250607-4chan_forMyAnons_pack.html">nontech/copied/ Self-Improvement Advises from 4Chan</a></li>
+    <li><code>2025-05-18</code> <a href="nontech/finances/20250518-cdi-or-real-state.html">nontech/finances/ CDI or Real State</a></li>
+    <li><code>2025-05-01</code> <a href="nontech/personal/20250501-my-routine-planning.html">nontech/personal/ My Personal Routine Planning</a></li>
+    <li><code>2025-04-19</code> <a href="20250419-hello-world.html">/ Hello World</a></li>
   </ul>
 </channel>
 </rss>
