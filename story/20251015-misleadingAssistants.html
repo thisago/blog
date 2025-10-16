@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Misleading Assistants</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/theme/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <h1><a href="/">thisago's blog</a></h1>
+</header>
+</div>
+<div id="content" class="content">
+<h1 class="title">Misleading Assistants</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7e5d47a">Misusing LLMs</a></li>
+<li><a href="#org81432e2">Misleading LLMs</a></li>
+<li><a href="#org94b3a69">Conclusion</a></li>
+</ul>
+</div>
+</div>
+<blockquote>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><code></code></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+This is mostly a personal relate
+</p>
+</blockquote>
+
+<p>
+Some time ago I had the unfortunate decision of contracting a accountant company to manage the legal state of my juridic person<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> because of it's lower price. But now I think the costs were just hidden in other ways.
+</p>
+
+<p>
+I get very revolted with the imprudent use of LLMs. I think it's capable to bring high costs to the future, specially towards "freedom".
+</p>
+
+<div id="outline-container-org7e5d47a" class="outline-2">
+<h2 id="org7e5d47a">Misusing LLMs</h2>
+<div class="outline-text-2" id="text-org7e5d47a">
+<p>
+The accountant company, one of the largest online at Brazil, have a recently built LLM assistant to reduce the support effort.
+</p>
+
+<p>
+"Despite being on WhatsApp, this seems nice", I thought. Well, I was wrong.
+</p>
+
+<p>
+After a deeper chat with the LLM about the overwhelming and complex nuances of Brazil's laws regarding managing a company, I got a response including my bank balance, based on the imported transactions.
+</p>
+
+<p>
+This raised my guard, as I was naively assuming they was managing well my data.
+</p>
+
+<p>
+I asked the LLM to tell me what information it received about me, and it listed almost everything the accountant company knows, some of the data includes:
+</p>
+<dl class="org-dl">
+<dt>The company's unique ID</dt><dd>"CNPJ"</dd>
+<dt>Full company name</dt><dd>Being a small company, it's likely to be your full name + some extra context. i.e., "John Doe Carpentry"</dd>
+<dt>Account balance</dt><dd>Based on the importations</dd>
+</dl>
+
+<p>
+And some non PII, which would supply all the context needs for a good support:
+</p>
+<ul class="org-ul">
+<li>Tax regime</li>
+<li>Subscribed plan at the accountant platform</li>
+</ul>
+
+<p>
+They simply doesn't takes caution on what they send to third-parties.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81432e2" class="outline-2">
+<h2 id="org81432e2">Misleading LLMs</h2>
+<div class="outline-text-2" id="text-org81432e2">
+<p>
+Then after asking and being answered by the assistant with a broad overview of what it knows about me, I started to ask about terms of privacy, where do I agreed to share my data to thirds and all stuff, and here the things started to get worse.
+</p>
+
+<p>
+In summary, the LLM claimed with surety that no data is being sent by third-parties, considering the OpenAI not as a third-party.
+</p>
+
+<p>
+Either being this behavior from the prompt or not, it seems the LLM have a great potential for deceiving us. They're basically agents with hidden intentions set by others, and with high politeness.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org94b3a69" class="outline-2">
+<h2 id="org94b3a69">Conclusion</h2>
+<div class="outline-text-2" id="text-org94b3a69">
+<p>
+This post is not from good quality. I admit some of the other posts here was made with help of LLM reviews, but I starting to get disgusted with this and something meant to be a tool is becoming more likely to a plague, infesting everything, without options for the users.
+</p>
+
+<p>
+I'm not against the technology itself, but mostly of integrated LLMs are through third-party services, making these services (i.e., OpenAI) a central of knowledge about intrinsic aspects of both technical and personal realities of us.
+</p>
+
+<hr>
+
+<p>
+I'd say the solution is something like self-hosting. Currently I use Copilot Pro, but I don't recommend and my next steps towards privacy would be:
+</p>
+<ul class="org-ul">
+<li>Move out from GitHub to Codeberg. GitHub does likely the same with our data.
+<ul class="org-ul">
+<li>Despite still needing GitHub to work for others, I will soon move everything else to somewhere <i>less liberal</i> towards LLMs training and ingesting.</li>
+</ul></li>
+<li>Let go of SaaS LLMs and self-host locally smaller models (or maybe rent GPUs when more power is needed)</li>
+<li>Move out from this accountant company and locate some smaller accountant for more proximity.</li>
+</ul>
+
+<p>
+I hope you found some use in this ugly words. I am happy to write this and I feel reclaiming the joy of doing things on my own, and also stopping to ask what LLM thinks about my thought as if it was a fair judge.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Honestly, I don't know how it's called in outside the Brazil. I tried to literally translate what we know here as "Pessoa Jurírica" (PF), which AFAIK can be simplified to a "legal registered company" under a unique ID, a "CNPJ"</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+See the source code <a href="https://github.com/thisago/blog">here</a>.
+</div>
+</body>
+</html>
