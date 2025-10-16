@@ -1,0 +1,55 @@
+#+title: Misleading Assistants
+#+DATE: <2025-10-15 Wed>
+
+#+begin_quote
+| ~~
+
+This is mostly a personal relate
+#+end_quote
+
+Some time ago I had the unfortunate decision of contracting a accountant company to manage the legal state of my juridic person[fn:: Honestly, I don't know how it's called in outside the Brazil. I tried to literally translate what we know here as "Pessoa Jurírica" (PF), which AFAIK can be simplified to a "legal registered company" under a unique ID, a "CNPJ"] because of it's lower price. But now I think the costs were just hidden in other ways.
+
+I get very revolted with the imprudent use of LLMs. I think it's capable to bring high costs to the future, specially towards "freedom".
+
+* Misusing LLMs
+The accountant company, one of the largest online at Brazil, have a recently built LLM assistant to reduce the support effort.
+
+"Despite being on WhatsApp, this seems nice", I thought. Well, I was wrong.
+
+After a deeper chat with the LLM about the overwhelming and complex nuances of Brazil's laws regarding managing a company, I got a response including my bank balance, based on the imported transactions.
+
+This raised my guard, as I was naively assuming they was managing well my data.
+
+I asked the LLM to tell me what information it received about me, and it listed almost everything the accountant company knows, some of the data includes:
+- The company's unique ID :: "CNPJ"
+- Full company name :: Being a small company, it's likely to be your full name + some extra context. i.e., "John Doe Carpentry"
+- Account balance :: Based on the importations
+
+And some non PII, which would supply all the context needs for a good support:
+- Tax regime
+- Subscribed plan at the accountant platform
+
+They simply doesn't takes caution on what they send to third-parties.
+
+* Misleading LLMs
+Then after asking and being answered by the assistant with a broad overview of what it knows about me, I started to ask about terms of privacy, where do I agreed to share my data to thirds and all stuff, and here the things started to get worse.
+
+In summary, the LLM claimed with surety that no data is being sent by third-parties, considering the OpenAI not as a third-party.
+
+Either being this behavior from the prompt or not, it seems the LLM have a great potential for deceiving us. They're basically agents with hidden intentions set by others, and with high politeness.
+
+
+* Conclusion
+This post is not from good quality. I admit some of the other posts here was made with help of LLM reviews, but I starting to get disgusted with this and something meant to be a tool is becoming more likely to a plague, infesting everything, without options for the users.
+
+I'm not against the technology itself, but mostly of integrated LLMs are through third-party services, making these services (i.e., OpenAI) a central of knowledge about intrinsic aspects of both technical and personal realities of us.
+
+-----
+
+I'd say the solution is something like self-hosting. Currently I use Copilot Pro, but I don't recommend and my next steps towards privacy would be:
+- Move out from GitHub to Codeberg. GitHub does likely the same with our data.
+  + Despite still needing GitHub to work for others, I will soon move everything else to somewhere /less liberal/ towards LLMs training and ingesting.
+- Let go of SaaS LLMs and self-host locally smaller models (or maybe rent GPUs when more power is needed)
+- Move out from this accountant company and locate some smaller accountant for more proximity.
+
+I hope you found some use in this ugly words. I am happy to write this and I feel reclaiming the joy of doing things on my own, and also stopping to ask what LLM thinks about my thought as if it was a fair judge.
