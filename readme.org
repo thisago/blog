@@ -1,5 +1,2 @@
-#+title: thisago's blog
-
-* Task List :noexport:
-** TODO Render post creation and modify time :feature:
-** TODO Staging environment for PRs :feature:
+* MOVED TO CODEBERG
+https://codeberg.org/thisago/blog
